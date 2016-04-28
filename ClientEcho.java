@@ -8,7 +8,7 @@ public class ClientEcho
     InetAddress add = InetAddress.getByName("localhost");   
                                          
     DatagramSocket dsock = new DatagramSocket();
-    String message1 = "hello this is sent from nestor's computer!";    
+    String message1 = "Hello! This is sent from the client!";    
     byte arr[] = message1.getBytes( );  
     DatagramPacket dpack = new DatagramPacket(arr, arr.length, add, 7);
     dsock.send(dpack);                                   // send the packet
